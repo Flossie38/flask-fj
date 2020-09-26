@@ -1,66 +1,82 @@
 <!-- when this file loads it inherits from base html -->
 
-{% extends "base.html" %}
-{% block content %}
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
-            </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
+{% extends "base.html" %} {% block content %}
+<h2>Choose from the below options...</h2>
+<div class="row">
+  <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="post-preview">
+      <a href="post.html">
+        <h2 class="post-title">
+          Breakfasts
+        </h2>
+        <h3 class="post-subtitle">
+          Delicious breakfasts to get you up and ready to face your day! Choose
+          from vegetarian options, classic British or Mediterranean options to
+          provide a healthy balance to your morning!
+        </h3>
+      </a>
+      <!-- <p class="post-meta">Posted by
             <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
-      </div>
+            on September 24, 2019</p> -->
     </div>
+    <hr />
+    <div class="post-preview">
+      <a href="post.html">
+        <h2 class="post-title">
+          Luscious lunches
+        </h2>
+        <h3 class="post-subtitle">
+          Lunch, brunch, or dine in style and to suit your budget. Our recipes
+          are easy and quick, require minimal preparation time and easy to
+          portion up or down incase you have extra mouths to feed!
+        </h3>
+      </a>
+      <!-- <p class="post-meta">
+        Posted by
+        <a href="#">Start Bootstrap</a>
+        on September 18, 2019
+      </p> -->
+    </div>
+    <hr />
+    <div class="post-preview">
+      <a href="post.html">
+        <h2 class="post-title">
+          Decadent desserts
+        </h2>
+        <h3 class="post-subtitle">
+          Fruity, fresh, creamy, sweet - whatever your taste you'll find something here!
+        </h3>
+      </a>
+      <!-- <p class="post-meta">
+        Posted by
+        <a href="#">Start Bootstrap</a>
+        on August 24, 2019
+      </p> -->
+    </div>
+    <hr />
+    <div class="post-preview">
+      <a href="post.html">
+        <h2 class="post-title">
+          Nibbles and snacks
+        </h2>
+        <h3 class="post-subtitle">
+          Quick munchies or decadent hors d'ouvres? Check out our table (and tummy) fillers for
+                                    parties and get togethers.
+        </h3>
+      </a>
+      <!-- <p class="post-meta">
+        Posted by
+        <a href="#">Start Bootstrap</a>
+        on July 8, 2019
+      </p> -->
+    </div>
+    <hr />
+
+    <h2>Or search ingredients</h2>
+    <!-- Pager -->
+    <div class="clearfix">
+      <a class="btn btn-primary float-right" href="#">Search &rarr;</a>
+    </div>
+  </div>
+</div>
 {% endblock %}
