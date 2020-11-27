@@ -13,13 +13,20 @@
       href="{{ url_for('static', filename='css/clean-blog.min.css') }}"
       type="text/css"
     />
+
+ <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      type="text/css"
+    />
+    
     <title>Yummy!</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-         <button
+        <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
@@ -46,6 +53,9 @@
                 >Log in or Register</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('recipes') }}">recipes</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -63,7 +73,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Yummy</h1>
+              <h1>Yummy!</h1>
               <span class="subheading"
                 >Cooking up a storm every day of the week!</span
               >
@@ -72,6 +82,20 @@
         </div>
       </div>
     </header>
+
+    <div class="container">
+      {% with messages = get_flashed_messages() %} {% if messages %} {% for
+      message in messages %}
+      <div class="row flashes">
+        <h4 class="light-blue lighten-4 center-align">
+          {{ message }}
+        </h4>
+      </div>
+      {% endfor %} {% endif %} {% endwith %}
+    </div>
+
+    <br>
+    <br>
 
     <!-- Main Content -->
     <div class="container">
