@@ -86,12 +86,13 @@ def profile(username):
             {"username": session["user"]})["username"]
     if session["user"]:
         return render_template("profile.html", username=username)
+    
     return redirect(url_for("login"))
 
 
 @app.route("/logout")
 def logout():
-    flash("Logged out of Yummy!  See you next time!")
+    flash("You are logged out of Yummy!  See you next time!")
     session.pop("user")
     return redirect(url_for("login"))
 
