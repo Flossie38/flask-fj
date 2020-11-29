@@ -11,13 +11,51 @@
         <br />
         <h4>{{ recipe.recipe_name }}</h4>
         <br />
-        {{ recipe.cuisine }}
-        <br />
+        <h5>{{ recipe.cuisine }}</h5>
+
+        <p>
+          <a
+            class="btn btn-primary"
+            data-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Ingredients
+          </a>
+        </p>
+
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            {{ recipe.ing }}
+          </div>
+        </div>
+
+        <p>
+          <a
+            class="btn btn-primary"
+            data-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Method
+          </a>
+        </p>
+
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            {{ recipe.method }}
+          </div>
+        </div>
       </div>
     </div>
+
     <br />
     {% endfor %}
-  </div>
+  
 </div>
 
 {% endblock %}
