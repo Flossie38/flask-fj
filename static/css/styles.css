@@ -3,3 +3,8 @@
     text-align: center;
     color: teal
 }
+
+.card {
+    padding: 10px;
+    margin: 10px;
+}
